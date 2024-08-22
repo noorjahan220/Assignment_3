@@ -1,23 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/33c81823c1.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
         .manrope-font {
-   font-family: "Manrope", sans-serif;
-   font-optical-sizing : auto;
-  }
-     </style>
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                arrow: 'rgba(171, 239, 95, 1)',
+                bg : 'rgba(171, 239, 95, 0.5)',
+                
+                
+              }
+            }
+          }
+        }
+      </script>
 </head>
+
 <body class="manrope-font">
-   <h1 class="text-red-500">hello world</h1>
+    <header class="container mx-auto bg-gradient-to-r from-[rgba(255, 255, 255, 1)] to-rgba(255, 255, 255, 0)">
+        <nav>
+            <div class="navbar bg-base-100 flex justify-between ">
+                <div class="navbar-start flex justify-between">
+                   
+                    <div class="flex gap-1">
+                        <div><i class="fa-solid fa-arrow-right bg-arrow rounded-full p-1 -rotate-45"></i></div>
+                        <div><a class="text-xl font-extrabold">Rinterio</a></div>
+                    </div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Contact Us</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="hover:font-bold hover:text-black duration-300 ease-in-out font-bold"><a>Home</a></li>
+                        <li class="hover:font-bold hover:text-black duration-300 ease-in-out" ><a>Services</a></li>
+                        <li class="hover:font-bold hover:text-black duration-300 ease-in-out"><a>Portfolio</a></li>
+                        <li class="hover:font-bold hover:text-black duration-300 ease-in-out"><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end space-x-3">
+                    <div class="bg-gray-300 rounded-full px-2 py-1 hidden lg:flex "><i class="fa-solid fa-magnifying-glass text-white"></i></div>
+                    <div  class="bg-gray-300 rounded-full px-2 py-1 hidden lg:flex"><i class="fa-solid fa-cart-shopping text-white"></i></div>
+                    <div class="hidden lg:flex">
+                        <a class="btn text-[15px] font-bold bg-arrow rounded-full">Book Consult 
+<i class="fa-solid fa-arrow-right bg-black text-white rounded-full p-1 -rotate-45"></i>
+                        </a></div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner section -->
+         <section class="text-center">
+            <div>
+                <img src="assets/banner.png" alt="" class="mx-auto  w-[300px] h-[200px]
+                lg:w-[530] lg:h-[350] mt-5" >
+            </div>
+            <div>
+                <h1 class="text-4xl font-extrabold">A barn house of this design has <br> a striking appearance</h1>
+                <p class="font-medium text-gray-500 text-[15px]   mt-4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+               <a class="btn text-[15px] font-bold bg-bg rounded-full mt-4 px-6 ">View Details 
+                <i class="fa-solid fa-arrow-right bg-arrow text-white rounded-full p-1 -rotate-45"></i>
+                </a>
+            </div>
+         </section>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
+
 </html>
